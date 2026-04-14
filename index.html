@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachel Meyers Tutoring</title>
+  <style>
+    :root{
+      --purple:#5b21b6;
+      --purple-dark:#4c1d95;
+      --gold:#f5b400;
+      --slate-50:#f8fafc;
+      --slate-100:#f1f5f9;
+      --slate-200:#e2e8f0;
+      --slate-500:#64748b;
+      --slate-700:#334155;
+      --slate-900:#0f172a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--slate-900);background:#fff;line-height:1.5}
+    .hero{background:linear-gradient(135deg,var(--purple-dark),var(--purple),var(--gold));color:#fff;padding:48px 20px}
+    .container{max-width:1100px;margin:0 auto}
+    .hero-grid,.main-grid,.footer-grid{display:grid;gap:28px}
+    .hero-grid{grid-template-columns:1.3fr .9fr;align-items:center}
+    .badge{display:inline-block;background:rgba(255,255,255,.15);padding:8px 14px;border-radius:999px;font-size:14px;margin-bottom:18px}
+    h1{font-size:48px;margin:0 0 14px 0}
+    h2{margin:0 0 12px 0;font-size:30px}
+    h3{margin:0 0 8px 0;font-size:20px}
+    p{margin:0 0 12px 0}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+    .chip{background:rgba(255,255,255,.15);padding:10px 14px;border-radius:999px;font-weight:700;font-size:14px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+    .contact-card,.panel,.session,.footer-card,.photo-card{border-radius:24px}
+    .contact-card{color:#fff;text-decoration:none;background:rgba(255,255,255,.12);padding:16px;border:1px solid rgba(255,255,255,.15)}
+    .photo-card{background:#fff;color:var(--slate-900);padding:18px;box-shadow:0 15px 40px rgba(0,0,0,.18)}
+    .photo{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px;display:block;background:var(--slate-100);border:1px solid var(--slate-200)}
+    .qr-box{margin-top:14px;border:2px dashed var(--slate-200);border-radius:18px;padding:14px;text-align:center;color:var(--slate-500);font-size:14px;background:#fff}
+    .main{padding:44px 20px}
+    .main-grid{grid-template-columns:1fr 1fr;align-items:start}
+    .panel{background:#fff;border:1px solid var(--slate-200);padding:28px;box-shadow:0 4px 16px rgba(15,23,42,.05)}
+    .panel.alt{background:var(--slate-50)}
+    .course-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+    .course{background:var(--slate-50);border-radius:18px;padding:14px;font-weight:700;color:var(--slate-700)}
+    .session-list{margin-top:20px}
+    .session{background:#fff;border:1px solid var(--slate-200);padding:20px;margin-bottom:16px;box-shadow:0 4px 12px rgba(15,23,42,.04)}
+    .session-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+    .price{text-align:right;white-space:nowrap}
+    .price-amount{color:var(--purple);font-size:32px;font-weight:800;line-height:1}
+    .price-note{color:var(--slate-500);font-size:13px;margin-top:4px}
+    .deposit{background:#fffbeb;color:var(--slate-700);padding:12px 14px;border-radius:16px;margin:14px 0;font-size:14px}
+    .button{display:block;width:100%;text-align:center;text-decoration:none;color:#fff;background:var(--purple);padding:14px 18px;border-radius:18px;font-weight:700}
+    .button.dark{background:var(--slate-900)}
+    .footer{border-top:1px solid var(--slate-200);background:var(--slate-50);padding:36px 20px}
+    .footer-grid{grid-template-columns:repeat(3,1fr)}
+    .footer-card{background:#fff;padding:22px;box-shadow:0 4px 12px rgba(15,23,42,.04)}
+    .muted{color:var(--slate-500)}
+    @media (max-width: 900px){.hero-grid,.main-grid,.footer-grid{grid-template-columns:1fr}h1{font-size:38px}}
+    @media (max-width: 640px){.contact-grid,.course-grid{grid-template-columns:1fr}.session-top{flex-direction:column}.price{text-align:left}h1{font-size:32px}h2{font-size:26px}}
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">LSU Math PhD Student • M.S., Sam Houston State University</div>
+        <h1>Rachel Meyers, M.S.</h1>
+        <p style="font-size:22px;">Friendly, experienced tutoring in math, Chemistry 1, and Spanish.</p>
+        <p style="font-size:18px; opacity:.92;">I have taught, graded, or TA’d most undergraduate math courses a typical student is required to take.</p>
+
+        <div class="chips">
+          <div class="chip">All Math Courses</div>
+          <div class="chip">Chemistry 1</div>
+          <div class="chip">Spanish</div>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="tel:936-207-7142">
+            <div style="opacity:.8;">Call or text</div>
+            <div style="font-weight:700;">936-207-7142</div>
+          </a>
+          <a class="contact-card" href="mailto:Rachel_E_Meyers@hotmail.com">
+            <div style="opacity:.8;">Email</div>
+            <div style="font-weight:700; word-break:break-word;">Rachel_E_Meyers@hotmail.com</div>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="photo-card">
+          <img class="photo" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Tutor profile placeholder">
+          <div class="qr-box">
+            Add your QR code image here later, or link your flyer directly to this page.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main">
+    <div class="container main-grid">
+      <div class="panel">
+        <h2>What I tutor</h2>
+        <p class="muted">Support for required undergraduate courses, homework help, test prep, and concept review.</p>
+        <div class="course-grid">
+          <div class="course">College Algebra</div>
+          <div class="course">Trigonometry</div>
+          <div class="course">Calculus I–III</div>
+          <div class="course">Differential Equations</div>
+          <div class="course">Linear Algebra</div>
+          <div class="course">Discrete Math</div>
+          <div class="course">Intro Statistics</div>
+          <div class="course">Spanish & Chemistry 1</div>
+        </div>
+      </div>
+
+      <div class="panel alt">
+        <h2>Book a session</h2>
+        <p class="muted">Choose the session that fits your needs. A $10 deposit is required to reserve your appointment.</p>
+
+        <div class="session-list">
+          <div class="session">
+            <div class="session-top">
+              <div>
+                <h3>1-Hour Tutoring Session</h3>
+                <p class="muted">Great for weekly help, homework support, or exam review.</p>
+              </div>
+              <div class="price">
+                <div class="price-amount">$50</div>
+                <div class="price-note">in person</div>
+              </div>
+            </div>
+            <div class="deposit">$10 deposit required. Remaining balance due at the session.</div>
+            <a class="button" href="https://cal.com/rachel-meyers-h0mhpd/tutoring-session-1hr" target="_blank" rel="noreferrer">Book 1-Hour Session</a>
+          </div>
+
+          <div class="session">
+            <div class="session-top">
+              <div>
+                <h3>2-Hour Tutoring Session</h3>
+                <p class="muted">Best for major test prep, catch-up sessions, or longer problem sets.</p>
+              </div>
+              <div class="price">
+                <div class="price-amount">$100</div>
+                <div class="price-note">in person</div>
+              </div>
+            </div>
+            <div class="deposit">$10 deposit required. Remaining balance due at the session.</div>
+            <a class="button" href="https://cal.com/rachel-meyers-h0mhpd/tutoring-session-2hr" target="_blank" rel="noreferrer">Book 2-Hour Session</a>
+          </div>
+
+          <div class="session">
+            <div class="session-top">
+              <div>
+                <h3>Zoom Tutoring Session</h3>
+                <p class="muted">Flexible online tutoring using your LSU Zoom meeting link.</p>
+              </div>
+              <div class="price">
+                <div class="price-amount">$40</div>
+                <div class="price-note">per hour</div>
+              </div>
+            </div>
+            <div class="deposit">Use this Zoom link at your scheduled time after booking. A $10 deposit is required to reserve.</div>
+            <a class="button dark" href="https://lsu.zoom.us/j/2162105805?omn=94844379872" target="_blank" rel="noreferrer">Open Zoom Meeting Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container footer-grid">
+      <div class="footer-card">
+        <h3>Easy booking</h3>
+        <p class="muted">Students can choose the session length that fits their needs and book directly from your page.</p>
+      </div>
+      <div class="footer-card">
+        <h3>Easy to share</h3>
+        <p class="muted">Use this website link in your QR code, flyer, business card, or text messages.</p>
+      </div>
+      <div class="footer-card">
+        <h3>Next step</h3>
+        <p class="muted">Upload this file as <strong>index.html</strong> to GitHub and turn on GitHub Pages to publish it.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
